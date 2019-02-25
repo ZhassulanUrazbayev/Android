@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    >
+
+    <TableRow>
+        <TextView
+            android:id="@+id/FirstTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/USD"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/FirstValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/USD"
+            android:gravity="center"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/SecondTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/USD"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/SecondValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/USD"
+            android:gravity="center"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/ThirdTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/USD"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/ThirdValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/USD"
+            android:gravity="center"/>
+    </TableRow>
+
+</TableLayout>

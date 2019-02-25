@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FirstMidProject</string>
+    <string name="USD">USD</string>
+    <string name="EUR">EUR</string>
+    <string name="GBP">GBP</string>
+    <string name="RUB">RUB</string>
+</resources>
