@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="15">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:paddingLeft="25dp"
+            android:background="@drawable/rectangle_left_top_right"
+            android:text="Отправить фото с помощью?"
+            android:textSize="16sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:gravity="center|left"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="9"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="10">
+            <TextView
+                android:id="@+id/dialog_send_photo_via_camera"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:text="Камера"
+                android:paddingLeft="25dp"
+                android:textSize="17sp"
+                android:gravity="left|center" />
+            <TextView
+                android:id="@+id/dialog_send_photo_via_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:text="Галерея"
+                android:paddingLeft="25dp"
+                android:textSize="17sp"
+                android:gravity="left|center" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

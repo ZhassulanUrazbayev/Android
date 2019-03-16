@@ -1,0 +1,253 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<LinearLayout
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:orientation = "vertical"
+    android:layout_weight="10"
+    android:background = "@color/divaderColor"
+    tools:context="ru.startandroid.management.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:titleTextColor="@android:color/white"
+        app:subtitleTextColor="@android:color/white"
+        app:theme="@style/BaseTheme"
+        android:background="@color/colorPrimaryDark" />
+
+    <android.support.v7.widget.GridLayout
+        android:layout_marginTop="13dp"
+        android:layout_weight="10"
+        android:layout_width = "match_parent"
+        android:layout_height = "0dp"
+        app:columnCount = "2"
+        app:rowCount = "3"
+        app:columnOrderPreserved="false"
+        app:alignmentMode="alignMargins"
+
+        android:id="@+id/mainGrid">
+
+        <android.support.v7.widget.CardView
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            app:layout_columnWeight = "1"
+            app:layout_rowWeight = "1"
+            app:cardBackgroundColor = "@android:color/white"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="10dp" >
+
+        <LinearLayout
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+
+                android:background = "@android:color/transparent"
+                android:orientation = "vertical"
+                android:layout_gravity="center_horizontal|center_vertical">
+
+                <ImageView
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:layout_gravity="center_horizontal"
+
+                    android:src = "@drawable/ic_inven" />
+                <TextView
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+
+                    android:textSize = "20sp"
+                    android:textColor = "@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:text = "Инвентарь" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+             <android.support.v7.widget.CardView
+                android:layout_height="0dp"
+                android:layout_width="0dp"
+                app:layout_columnWeight = "1"
+                app:layout_rowWeight = "1"
+                 app:cardBackgroundColor = "@android:color/white"
+                 android:layout_marginBottom="16dp"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginRight="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                >
+            <LinearLayout
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:orientation = "vertical"
+                android:background = "@android:color/transparent"
+                android:layout_gravity="center_horizontal|center_vertical">
+
+                <ImageView
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:layout_gravity="center_horizontal"
+
+                    android:src = "@drawable/ic_ad" />
+                <TextView
+                    android:layout_width = "wrap_content"
+                    android:textSize = "20sp"
+                    android:textColor = "@color/colorPrimary"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:layout_height = "wrap_content"
+                    android:text = "Добавить" />
+            </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            app:cardBackgroundColor = "@android:color/white"
+                android:layout_height="0dp"
+                android:layout_width="0dp"
+                app:layout_columnWeight = "1"
+                app:layout_rowWeight = "1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="10dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                >
+            <LinearLayout
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:orientation = "vertical"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:background = "@android:color/transparent">
+
+                <ImageView
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:layout_gravity="center_horizontal"
+
+                    android:src = "@drawable/ic_search"
+                    android:id="@+id/imageView" />
+
+                <TextView
+                    android:layout_width = "wrap_content"
+                    android:textSize = "20sp"
+                    android:textColor = "@color/colorPrimary"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:layout_height = "wrap_content"
+                    android:text = "Поиск" />
+            </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            app:cardBackgroundColor = "@android:color/white"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            app:layout_columnWeight = "1"
+            app:layout_rowWeight = "1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="16dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            >
+            <LinearLayout
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:orientation = "vertical"
+                android:background = "@android:color/transparent"
+                android:layout_gravity="center_horizontal|center_vertical">
+
+                <ImageView
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:layout_gravity="center_horizontal"
+
+                    android:src = "@drawable/ic_rep" />
+                <TextView
+                    android:layout_width = "wrap_content"
+                    android:textColor = "@color/colorPrimary"
+                    android:textSize = "20sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:layout_height = "wrap_content"
+                    android:text = "Отчеты" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            app:cardBackgroundColor = "@android:color/white"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            app:layout_columnWeight = "1"
+            app:layout_rowWeight = "1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="10dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            >
+            <LinearLayout
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:orientation = "vertical"
+                android:background = "@android:color/transparent"
+                android:layout_gravity="center_horizontal|center_vertical">
+
+                <ImageView
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src = "@drawable/ic_notif" />
+                <TextView
+                    android:layout_width = "wrap_content"
+                    android:textColor = "@color/colorPrimary"
+                    android:textSize = "20sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:layout_height = "wrap_content"
+                    android:text = "Объявления" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            app:cardBackgroundColor = "@android:color/white"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            app:layout_columnWeight = "1"
+            app:layout_rowWeight = "1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="16dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            >
+            <LinearLayout
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:orientation = "vertical"
+                android:background = "@android:color/transparent"
+                android:layout_gravity="center_horizontal|center_vertical">
+
+            <ImageView
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                android:layout_gravity="center_horizontal"
+                    android:src = "@drawable/ic_out" />
+                <TextView
+                    android:layout_width = "wrap_content"
+                    android:textSize = "20sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:layout_height = "wrap_content"
+                    android:textColor = "@color/colorPrimary"
+                    android:text = "Выйти" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </android.support.v7.widget.GridLayout>
+</LinearLayout>

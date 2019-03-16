@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:background="@color/colorWhite"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="15">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="9"
+                android:text="Вы точно хотите выйти?"
+                android:textSize="16sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="6"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:weightSum="10">
+                <TextView
+                    android:id="@+id/dialog_exit_ok"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:text="Да"
+                    android:background="@drawable/rectangle_top_right"
+                    android:textColor="@color/colorPrimaryBLue"
+                    android:textStyle="bold"
+                    android:textSize="19sp"
+                    android:gravity="center" />
+                <TextView
+                    android:id="@+id/dialog_exit_cancell"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:text="Отмена"
+                    android:background="@drawable/rectangle_top"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="18sp"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>

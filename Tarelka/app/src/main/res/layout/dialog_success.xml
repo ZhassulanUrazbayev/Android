@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="15">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="Поздравляем!"
+            android:textSize="16sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:text="Вы прошли тест!"
+            android:textSize="16sp"
+            android:background="@drawable/rectangle_left_top_right"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="10">
+            <TextView
+                android:id="@+id/dialog_success_ok"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:text="Ок"
+                android:background="@drawable/rectangle_top_right"
+                android:textColor="@color/colorPrimaryBLue"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

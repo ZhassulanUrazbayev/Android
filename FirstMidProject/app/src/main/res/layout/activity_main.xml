@@ -1,39 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     >
-
-    <TextView
-        android:id="@+id/USD"
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarCustom"
+        android:minHeight="?attr/actionBarSize"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/USD"
-        android:gravity="center"/>
+        android:layout_height="?actionBarSize"
+        android:background="?attr/colorPrimary">
+        <TextView
+            android:id="@+id/toolBarText"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Hello World!"
+            android:textStyle="bold"
+            />
+    </android.support.v7.widget.Toolbar>
 
-    <TextView
-        android:id="@+id/EUR"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/EUR"
-        android:gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/background"
+            android:elevation="8dp"
+            android:orientation="vertical"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:layout_centerInParent="true">
 
-    <TextView
-        android:id="@+id/GBP"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/GBP"
-        android:gravity="center"/>
+            <TextView
+                android:id="@+id/USD"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="@string/USD"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
 
-    <TextView
-        android:id="@+id/RUB"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/RUB"
-        android:gravity="center"/>
+            <TextView
+                android:id="@+id/EUR"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="@string/EUR"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
 
-</LinearLayout>
+            <TextView
+                android:id="@+id/GBP"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="@string/GBP"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/RUB"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="@string/RUB"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"/>
+        </LinearLayout>
+
+</RelativeLayout>

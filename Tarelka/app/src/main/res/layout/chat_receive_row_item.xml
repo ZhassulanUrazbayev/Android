@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:weightSum="10"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="8.7"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/chat_received_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_for_message_receive"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:fontFamily="@font/montserratlight"
+            android:paddingTop="11dp"
+            android:paddingBottom="11dp"
+            android:text=""
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/chat_received_time"
+        android:layout_weight="1.3"
+        android:layout_width="0dp"
+        android:fontFamily="@font/montserratlightitalic"
+        android:layout_height="match_parent"
+        android:text=""
+        android:gravity="center|right"
+        android:textSize="12sp" />
+</LinearLayout>

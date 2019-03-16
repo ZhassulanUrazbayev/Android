@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:weightSum="10"
+    tools:context=".ui.welcome.LoginActivity">
+    <View
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></View>
+
+    <LinearLayout
+        android:layout_weight="1.2"
+        android:weightSum="20"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:id="@+id/welcome_title"
+            android:layout_weight="20"
+            android:layout_width="0dp"
+            android:textSize="23sp"
+            android:gravity="center|left"
+            android:visibility="visible"
+            android:textColor="@color/carbon_grey_600"
+            android:fontFamily="@font/montserratsemibold"
+            android:textStyle="bold"
+            android:text="Привет! Вас приветствует Тарелка"
+            android:layout_height="match_parent" />
+
+
+        <!--android:fontFamily="@font/montserratsemibold"-->
+    </LinearLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/welcome_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7">
+
+    </android.support.v4.view.ViewPager>
+
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/welcome_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2">
+
+    </me.relex.circleindicator.CircleIndicator>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+
+    </View>
+
+    <TextView
+        android:id="@+id/welcome_button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Далее"
+        android:textAllCaps="true"
+        android:textColor="@color/carbon_grey_600"
+        android:textSize="17sp"/>
+
+
+</LinearLayout>

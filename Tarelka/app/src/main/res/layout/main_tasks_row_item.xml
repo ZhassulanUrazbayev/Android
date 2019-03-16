@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="3dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    app:contentPadding="10dp">
+
+    <LinearLayout
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_weight="9.2"
+            android:id="@+id/task_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Неделя 1 - Учимся пить воду"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:textColor="@color/carbon_grey_800"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <ImageView
+            android:id="@+id/task_accessibility"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.55" />
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

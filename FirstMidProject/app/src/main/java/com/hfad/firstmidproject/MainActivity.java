@@ -3,6 +3,7 @@ package com.hfad.firstmidproject;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.TextView;
 
@@ -21,6 +22,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setTitle(null);
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbarCustom);
+
+        setSupportActionBar(toolbar);
+
+        TextView textView = (TextView)toolbar.findViewById(R.id.toolBarText);
+        textView.setText("String");
+
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
 
         usd = findViewById(R.id.USD);
         eur = findViewById(R.id.EUR);

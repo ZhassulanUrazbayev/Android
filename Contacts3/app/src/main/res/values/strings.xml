@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Contacts3</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="name">Name</string>
+    <string name="number">Number</string>
+</resources>

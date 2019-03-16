@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:id="@+id/Parent"
+    >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarCustom"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="?attr/colorPrimary">
+        <TextView
+            android:id="@+id/toolBarText"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Hello World!"
+            android:textStyle="bold"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:background="@drawable/background"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_margin="16dp"
+            android:id="@+id/ExchangeTitle"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/FirstTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/USD"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_margin="16dp"
+                android:id="@+id/SecondTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/USD"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/ThirdTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/USD"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="16dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/FirstValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/USD"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_margin="16dp"
+                android:id="@+id/SecondValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/USD"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/ThirdValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/USD"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

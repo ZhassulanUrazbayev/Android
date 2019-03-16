@@ -3,6 +3,8 @@ package com.hfad.firstmidproject.Model;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toolbar;
 
@@ -24,6 +26,7 @@ public class ExchangeRatio extends AppCompatActivity {
     String value ;
     Toolbar toolbarTop;
     TextView mTitle;
+    RelativeLayout mRelativeLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +34,7 @@ public class ExchangeRatio extends AppCompatActivity {
         setContentView(R.layout.activity_exchange_ratio);
         value = getIntent().getStringExtra("value");
         Log.d("value", value);
+        mRelativeLayout = findViewById(R.id.Parent);
 
         FirstTitle= findViewById(R.id.FirstTitle);
         SecondTitle= findViewById(R.id.SecondTitle);
@@ -43,7 +47,7 @@ public class ExchangeRatio extends AppCompatActivity {
         Application.sApiHelper.getExchange(value).enqueue(new Callback<ExchangeValue>() {
             @Override
             public void onResponse(Call<ExchangeValue> call, Response<ExchangeValue> response) {
-
+                mRelativeLayout.setVisibility(View.VISIBLE);
                 switch (value){
                     case "EUR":
                         FirstTitle.setText("RUB");

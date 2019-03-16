@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_columnWeight="1"
+    app:layout_rowWeight="1"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="4dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+  >
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/inventory_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wkaf otkritii dla documentov"
+                android:textSize = "18dp"
+                android:textColor = "@android:color/black"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" />
+            <TextView
+                android:id="@+id/inventory_number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="0163030"
+                android:textSize="16dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"/>
+
+        </LinearLayout>
+            <ImageButton
+
+                android:id="@+id/inventory_edit"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:src="@drawable/ic_edit"
+                android:gravity="center"
+                android:background="@android:color/transparent"
+                />
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

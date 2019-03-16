@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hfad.calculator.MainActivity"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:inputType=""/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6">
+        <TableRow
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/Clear"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:text="@string/Clear"
+                />
+
+            <Button
+                android:id="@+id/Symbol"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:text="@string/Symbol"/>
+
+            <Button
+                android:id="@+id/Brackets"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:text="@string/Brackets"/>
+
+            <Button
+                android:id="@+id/Devide"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:text="@string/Divide"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/seven"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:text="@string/seven"/>
+
+            <Button
+                android:id="@+id/eight"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:text="@string/eight"
+                />
+
+            <Button
+                android:id="@+id/nine"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:text="@string/nine"
+
+                />
+
+            <Button
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/Multiply"
+                android:text="@string/Multiply"
+                android:background="@color/transparent"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/four"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/four"
+                android:background="@color/transparent"/>
+
+            <Button
+                android:id="@+id/five"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:text="@string/five"/>
+
+            <Button
+                android:id="@+id/six"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:text="@string/six"/>
+
+            <Button
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/Minus"
+                android:text="@string/Minus"
+                android:background="@color/transparent"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1">
+
+            <Button
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/one"
+                android:text="@string/one"
+                android:background="@color/transparent"/>
+
+            <Button
+                android:id="@+id/two"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:text="@string/two"/>
+
+            <Button
+                android:id="@+id/three"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:text="@string/three"/>
+
+            <Button
+                android:id="@+id/Plus"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:text="@string/Plus"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1">
+
+            <Button
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:id="@+id/zero"
+                android:text="@string/zero"
+                android:background="@color/transparent"/>
+
+            <Button
+                android:layout_height="match_parent"
+                android:layout_weight="0.12"
+                android:id="@+id/equal"
+                android:text="@string/equal"
+                android:background="@color/transparent"/>
+
+            />
+        </TableRow>
+    </TableLayout>
+
+
+</LinearLayout>

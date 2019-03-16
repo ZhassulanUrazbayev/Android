@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".activities.NewsInfo">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:titleTextColor="@android:color/white"
+        app:subtitleTextColor="@android:color/white"
+        app:theme="@style/BaseTheme"
+        android:background="@color/colorPrimaryDark" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/newsinfo_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="График переноса рабочих дней в праздничные дни"
+            android:textSize = "20dp"
+            android:textColor = "@android:color/black"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/newsinfo_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Рабочий день 3 марта будет проходить в субботу по обычному расписанию. 4 марта отработка рабочего дня за 9 марта. В связи с праздником: 8, 9, 10 и 11 марта будут выходными днями. "
+            android:textSize="18dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/newsinfo_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="28-02-2017"
+            android:textAlignment="textEnd"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"/>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
