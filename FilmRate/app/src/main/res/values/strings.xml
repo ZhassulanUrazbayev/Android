@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">FilmRate</string>
+    <string name="example_text">Thanks for choosing our awesome blend tea. How do you want it serving? </string>
+    <string name="example_title">Temperature: </string>
+    <string name="button_on_text">Hot</string>
+    <string name="button_off_text">Could</string>
+    <string name="checkbox_first_item">Milk</string>
+    <string name="checkbox_second_item">Sugar</string>
+    <string name="checkbox_third_item">Lemon</string>
 </resources>
