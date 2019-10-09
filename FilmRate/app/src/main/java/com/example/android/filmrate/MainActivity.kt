@@ -36,6 +36,7 @@ class MainActivity : AppCompatActivity() {
                 return@OnNavigationItemSelectedListener true
             }
             R.id.nav_search -> {
+                var tmdbApiKey = BuildConfig.TMDB_API_KEY
                 toolbar.title = "Search"
                 val searchFragment = SearchFragment.newInstance()
                 openFragment(searchFragment)
